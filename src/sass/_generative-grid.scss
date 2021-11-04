@@ -1,0 +1,11 @@
+.generative-grid {
+  display: grid;
+  gap: 2rem;
+  grid-auto-flow: dense;
+}
+
+.generative-grid div {
+  background-color: var(--color, dodgerblue);
+  aspect-ratio: var(--aspect-ratio, 3/2);
+  grid-column: var(--col-start, 3) / span var(--col-span, 4);
+}

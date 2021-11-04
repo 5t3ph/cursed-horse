@@ -1,0 +1,47 @@
+.cursed {
+  --unit: 0.05vw;
+
+  display: grid;
+  grid-auto-columns: min-content 1fr min-content;
+}
+
+.head {
+  width: calc(var(--unit) * 541);
+}
+
+.middle {
+  height: calc(var(--unit) * 319);
+  width: 100%;
+  margin-inline-start: calc(var(--unit) * -100);
+}
+
+.rear {
+  width: calc(var(--unit) * 209);
+
+}
+
+.forelegs {
+  width: calc(var(--unit) * 329);
+}
+
+.hindlegs {
+  width: calc(var(--unit) * 227);
+}
+
+.middle, .rear {
+  align-self: end;
+}
+
+.forelegs,
+.hindlegs {
+  justify-self: end;
+}
+
+.hindlegs {
+  grid-column-start: 3;
+}
+
+.rear,
+.hindlegs {
+  margin-inline-start: calc(var(--unit) * -200);
+}
